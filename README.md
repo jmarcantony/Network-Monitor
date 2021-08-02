@@ -8,11 +8,11 @@ Programmes like these are to be used on networks you have explicit permission to
 ## *Written in python 3.9.1*
 
 # Installation on Windows:
-* `git clone https://github.com/ninjahacker123/Network-Monitor.git`
+* `git clone https://github.com/jmarcantony/Network-Monitor.git`
 * `cd Network-Monitor`
 * `python main.py`
 
 # Installation on Linux and Unix like OS:
-* `git clone https://github.com/ninjahacker123/Network-Monitor.git`
+* `git clone https://github.com/jmarcantony/Network-Monitor.git`
 * `cd Network-Monitor`
 * `python3 main.py`
