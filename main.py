@@ -90,6 +90,10 @@ def main():
 
     host_info = {host: scanned_results[:scanned_results.find(f"({host})")].split()[-1] for host in hosts}
 
+    print(f"Initial Online Hosts ({datetime.date.today().strftime('%b-%d-%Y')}, {datetime.datetime.now().strftime('%H:%M:%S')}):")
+    for host in host_info:
+        print(f"{host}: {host_info[host]}")
+
     rounds = 0
     
     while True:
