@@ -35,7 +35,7 @@ def play_ringtone(path):
     try:
         playsound(path)
     except:
-        print(f"[-] Could Not Play Ringtone '{path}'")
+        print(f"[-] Could Not Play Ringtone '{path}'... Playing System Beep Noise\a")
 
 def load_config():
     global HOSTS_TO_MONITOR
