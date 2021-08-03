@@ -73,7 +73,7 @@ def get_hosts():
     return raw_data
 
 def online_hosts(data):
-    ip_pattern = r"192.168.0.\d{3}"
+    ip_pattern = r"192.168.[0|1].\d{3}"
     hosts = re.findall(ip_pattern, data)
     return len(hosts), hosts
 
