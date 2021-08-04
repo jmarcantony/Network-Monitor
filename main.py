@@ -119,7 +119,7 @@ def main():
             if host not in curr_hosts:
                 print(f"[*] {host_info[host]} ({host}) left the network!")
                 if host in HOSTS_TO_MONITOR:
-                    if HOSTS_TO_MONITOR[host]["ring_on_leave"]:
+                    if HOSTS_TO_MONITOR[host]["alert_on_leave"]:
                         ringtone = HOSTS_TO_MONITOR[host]
                         play_ringtone(ringtone)
                 changed = True
