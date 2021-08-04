@@ -48,7 +48,7 @@ def load_config():
         if not data["hosts_to_monitor"]:
             return True
         for host in data["hosts_to_monitor"]:
-            if "ringtone" in data["hosts_to_monitor"][host] and "ring_on_leave" in data["hosts_to_monitor"][host]:
+            if "ringtone" in data["hosts_to_monitor"][host] and "alert_on_leave" in data["hosts_to_monitor"][host]:
                 if host in hosts:
                     print("[-] Config Files Are Corrupted (Repitition Of Host Adresses)... Using Default Mode")
                     return False
